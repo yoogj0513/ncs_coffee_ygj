@@ -1,3 +1,5 @@
+desc sale;
+desc product;
 select * from sale;
 select * from product;
 
@@ -15,4 +17,10 @@ insert into product(product_code, price, sale_cnt, margin_rate) values
 ('A001', 4500, 150, 10),
 ('A002', 3800, 140, 15),
 ('B001', 5200, 250, 12),
+('B002', 4300, 110, 11);
+
+delete from product where product_code = 'A003';
+select * from product;
+
+insert into product(product_code , price , sale_cnt , margin_rate ) values 
 ('B002', 4300, 110, 11);
